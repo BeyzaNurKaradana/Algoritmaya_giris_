@@ -1,0 +1,21 @@
+Liste, her bir adımda daha küçük parçalara ayrılır ve tek eleman kalana kadar bu işlem tekrarlanır. Ardından birleştirilip sıralı liste oluşturulur.
+
+Öncelikle dizinin atomik birimlerine ulaşana kadar parçalama işlemine devam edelim.
+1-                     [16,21,11,8,12,22]
+2-           [16,21,11]                   [8,12,22]
+3-        [16]         [21,11]         [8]         [12,22]
+4- [16]            [21]       [11]     [8]       [12]    [22]
+Dizi en küçük birimlere kadar parçalandıktan sonra, elemanların büyüklüklerine göre kıyaslayarak diziyi birleştirelim.
+5- [16]                [11,21]         [8]         [12,22]
+6-        [11,21,16]                      [8,12,22]
+7-                     [8,11,12,16,21,22]
+
+Son birleştirmeyle birlikte listenin sıralı hali aşağıdaki gibidir:
+[8,11,12,16,21,22]
+
+
+
+2. Big-O gösterimini yazınız.
+
+n terimli bir dizi için Big-O Notation;
+ O(nlogn)
